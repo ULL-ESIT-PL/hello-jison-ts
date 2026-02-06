@@ -40,7 +40,9 @@ The incoming sections explain how to build this project from scratch.
 
 ## Suggested Project structure
 
-Create the `package.json` with `npm init -y`. The final structure should look like this:
+Create the `package.json` with `npm init -y`. 
+
+The final structure of your project should look like this:
 
 ```
 ➜  hello git:(main) ✗ tree  -I 'node_modules|.git' -a
