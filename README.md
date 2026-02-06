@@ -111,7 +111,24 @@ Use a standard TypeScript config, but make sure
 - We also set `allowJs` to `true` to allow importing the generated JS parser.
 - The `types` field includes `node` to get type definitions for Node.js, which is necessary for the generated parser.
 - `skipLibCheck` is set to `true` to avoid type checking issues with the generated parser's dependencies.
-- `module` is set to `commonjs` since Jison by default generates CommonJS modules.
+- `module` is set to `commonjs` since Jison by default generates CommonJS modules although you can change this with the `--module-type` option when generating the parser.
+
+   ```console
+   ➜  hello-jison-ts git:(main) npx jison --help
+
+        Usage: jison [file] [lexfile] [options]
+
+        file        file containing a grammar
+        lexfile     file containing a lexical grammar
+
+        Options:
+        -j, --json                    force jison to expect a grammar in JSON format
+        -o FILE, --outfile FILE       Filename and base module name of the generated parser
+        -t, --debug                   Debug mode
+        -m TYPE, --module-type TYPE   The type of module to generate (commonjs, amd, js)
+        -p TYPE, --parser-type TYPE   The type of algorithm to use for the parser (lr0, slr,lalr, lr)
+        -V, --version                 print version and exit
+   ```
 - The `esModuleInterop` flag is set to `true` to allow default imports from CommonJS modules, which can simplify importing the generated parser.
 - The `rootDir` is set to `src` and `outDir` to `dist` to keep source and compiled files organized.
 - The `target` is set to `ES2019` to ensure compatibility with the generated parser's JavaScript features.
