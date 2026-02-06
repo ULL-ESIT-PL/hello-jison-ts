@@ -194,7 +194,7 @@ This produces a **JavaScript parser** (`dist/parser.js`).
 Jison predates to TS and generates JS, not TS.
 
 
-## 4. TypeScript wrapper (`src/calculator.ts`)
+## TypeScript wrapper (`src/calculator.ts`)
 
 Now we use the generated parser from TypeScript.
 
@@ -208,7 +208,7 @@ export function calculate(input: string): number {
 }
 ```
 
-## 5. Example usage (`index.ts`)
+## Example usage (`index.ts`)
 
 This is the entry point of the application, which imports the `calculate` function and tests it with some expressions:
 
@@ -220,7 +220,7 @@ console.log(calculate("10 - 4 + 3"));   // 9
 console.log(calculate("7 - 5 - 1"));    // 1
 ```
 
-## 6. Compile & run
+## Compile & run
 
 The command:
 
