@@ -243,3 +243,18 @@ Which should output:
 9
 1
 ```
+
+## Branch `tests`
+
+The `tests` branch contains some tests for the calculator. You can run them with:
+
+```bash
+npm test
+``` 
+and see the output in the terminal. The tests use Jest and are located in `tests/*.test.ts`. 
+
+You can also generate a coverage report with:
+
+```bash
+npm run test:coverage
+``` 
