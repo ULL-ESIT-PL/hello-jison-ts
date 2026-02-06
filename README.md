@@ -42,7 +42,7 @@ The incoming sections explain how to build this project from scratch.
 
 Create the `package.json` with `npm init -y`. 
 
-The final structure of your project should look like this:
+The final structure of your project sshould look like this:
 
 ```
 ➜  hello git:(main) ✗ tree  -I 'node_modules|.git' -a
@@ -82,6 +82,23 @@ npm install --save-dev typescript
 npm install --save-dev @types/node
 npm install --save-dev typescript
 ```
+
+Here are the contents of the dependencies fields in `package.json`:
+
+`➜  hello-jison-ts git:(main) jq '[.dependencies, .devDependencies]' package.json`
+```json
+[
+  {
+    "jison": "^0.4.18"
+  },
+  {
+    "@types/node": "^25.2.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+]
+
+
 
 ## Jison grammar (`src/calculator.jison`)
 
