@@ -1,5 +1,15 @@
 # Minimal example using Jison and TypeScript
 
+You can start from scratch and use this tutorial and the repo to check your code or 
+you can clone this repo and run it directly:
+
+```bash
+npm install
+npm start
+```
+
+The incoming sections explain how to build this project from scratch.
+
 ## Suggested Project structure
 
 Create the `package.json` with `npm init -y`. The final structure should look like this:
@@ -163,16 +173,4 @@ console.log(calculate("7 - 5 - 1"));    // 1
 npx tsc
 node dist/index.js
 ```
-
-## How it works (quick intuition)
-
-* **Lexer** turns `"10 - 4 + 3"` into tokens:
-
-  ```
-  NUMBER(10) '-' NUMBER(4) '+' NUMBER(3)
-  ```
-* **Parser rules** define how expressions combine
-* Semantic actions (`{ $$ = $1 + $3; }`) compute results on the fly
-* `parser.parse()` returns the final number
-
 
