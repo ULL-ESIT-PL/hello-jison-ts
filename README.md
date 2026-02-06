@@ -12,15 +12,13 @@ npm install
 npm start
 ``` 
 
+Here is the output of running the above commands in a GH codespace terminal:
+
 ```bash
 @crguezl ➜ /workspaces/hello-jison-ts (main) $ npm i
-
 added 1 package, and audited 26 packages in 2s
-
 2 packages are looking for funding
-  run `npm fund` for details
 
-found 0 vulnerabilities
 @crguezl ➜ /workspaces/hello-jison-ts (main) $ npm start
 
 > hello@1.0.0 start
@@ -30,12 +28,12 @@ found 0 vulnerabilities
 > hello@1.0.0 parser
 > jison src/calculator.jison -o dist/parser.js
 
-
 > hello@1.0.0 build
 > npx tsc
 
 3
 9
+1
 ```
 
 The incoming sections explain how to build this project from scratch.
