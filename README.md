@@ -210,6 +210,8 @@ export function calculate(input: string): number {
 
 ## 5. Example usage (`index.ts`)
 
+This is the entry point of the application, which imports the `calculate` function and tests it with some expressions:
+
 ```ts
 import { calculate } from "./calculator";
 
