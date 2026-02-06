@@ -145,7 +145,7 @@ npx jison src/calculator.jison -o dist/parser.js
 
 This produces a **JavaScript parser** (`dist/parser.js`).
 
-Jison generates JS, not TS.
+Jison predates to TS and generates JS, not TS.
 
 
 ## 4. TypeScript wrapper (`src/calculator.ts`)
