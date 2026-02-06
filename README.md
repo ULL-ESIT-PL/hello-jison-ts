@@ -222,8 +222,24 @@ console.log(calculate("7 - 5 - 1"));    // 1
 
 ## 6. Compile & run
 
+The command:
+
 ```bash
 npx tsc
+```
+will compile the TypeScript files in `src` to JavaScript files in `dist`. The generated parser is already in `dist/parser.js`, so it will be available for import.
+
+Finally, you can run the compiled code with:
+
+```bash
 node dist/index.js
 ```
 
+Which should output:
+
+```
+➜  hello-jison-ts git:(main) node dist/index.js 
+3
+9
+1
+```
