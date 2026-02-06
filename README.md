@@ -135,6 +135,7 @@ This grammar:
 ## tsconfig.json
 
 Use a standard TypeScript config, but make sure 
+
 - to set `moduleResolution` to `node` so that it can find the generated parser. 
 - We also set `allowJs` to `true` to allow importing the generated JS parser.
 - The `types` field includes `node` to get type definitions for Node.js, which is necessary for the generated parser.
@@ -159,7 +160,7 @@ Use a standard TypeScript config, but make sure
    ```
 - The `esModuleInterop` flag is set to `true` to allow default imports from CommonJS modules, which can simplify importing the generated parser.
 - The `rootDir` is set to `src` and `outDir` to `dist` to keep source and compiled files organized.
-- The `target` is set to `ES2019` to ensure compatibility with the generated parser's JavaScript features.
+- The `target` is set to `es2024` to allow using modern JavaScript features in the generated parser, but you can adjust this based on your needs.
 - The `include` field specifies that all TypeScript files in the `src` directory should be included in the compilation process.
 
 ```json
