@@ -2,7 +2,7 @@
 
 The problem with using Jison with TypeScript is that Jison predates TypeScript and generates JavaScript parsers, so you need to set up a TypeScript project that can work with the generated JavaScript parser.
 
-This repository illustrates a way to use Jison with TypeScript by generating the parser in JavaScript and then importing it into a TypeScript wrapper. The example is a simple calculator that can evaluate expressions with `+` and `-`.
+This repository illustrates a way to use Jison with TypeScript by generating the parser in JavaScript and then importing it into a TypeScript wrapper. The example is a simple [calculator](src/calculator.jison) that can evaluate expressions with `+` and `-`.
 
 You can start from scratch and read this tutorial and use the repository to check your code or 
 instead you can clone this repo and run it directly:
