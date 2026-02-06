@@ -46,8 +46,6 @@ To simplify, the `package.json` file in the example repo contains some scripts:
 ```
 ## Install dependencies including Jison
 
-```
-
 ```bash
 npm install jison
 npm install --save-dev typescript
