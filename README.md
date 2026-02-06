@@ -243,3 +243,46 @@ Which should output:
 9
 1
 ```
+
+## Testing
+
+This project includes comprehensive tests using Jest to ensure the calculator works correctly with various inputs and edge cases.
+
+### Running Tests
+
+To run the test suite:
+
+```bash
+npm test
+```
+
+To run tests with coverage information:
+
+```bash
+npm run test:coverage
+```
+
+To run tests in watch mode for development:
+
+```bash
+npm run test:watch
+```
+
+### Test Structure
+
+The test suite is organized into multiple files:
+
+- [`tests/calculator.test.ts`](tests/calculator.test.ts): Basic functionality tests for addition, subtraction, mixed operations, edge cases, whitespace handling, and error scenarios
+- [`tests/integration.test.ts`](tests/integration.test.ts): Integration tests that verify the parser works correctly with the examples from index.ts and tests grammar rule verification
+- [`tests/parser-errors.test.ts`](tests/parser-errors.test.ts): Error handling tests for invalid input, lexical errors, syntax errors, and parser edge cases
+
+### Test Coverage
+
+The test suite achieves 100% code coverage and includes tests for:
+
+- **Basic Operations**: Addition and subtraction with integers and decimals
+- **Complex Expressions**: Multiple operations with left-associative evaluation
+- **Edge Cases**: Single numbers, operations with zero, large numbers
+- **Whitespace Handling**: Various spacing patterns, tabs, leading/trailing spaces
+- **Error Handling**: Invalid characters, unsupported operators, malformed expressions
+- **Parser Integration**: Type verification, decimal parsing, independent expression handling
