@@ -265,7 +265,7 @@ Which should output:
 
 ## Branch `tests`
 
-The `tests` branch contains some tests for the calculator. You can run them with:
+[The `tests` branch of this repository](https://github.com/ULL-ESIT-PL/hello-jison-ts/tree/tests?tab=readme-ov-file) contains some tests for the calculator. You can run them with:
 
 ```bash
 npm test
