@@ -258,3 +258,5 @@ You can also generate a coverage report with:
 ```bash
 npm run test:coverage
 ``` 
+
+The branch also includes a GitHub Actions workflow that runs the tests on every push and pull request on that branch. You can see the workflow file in `.github/workflows/tests.yml`.
