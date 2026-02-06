@@ -50,8 +50,8 @@ To simplify, the `package.json` file in the example repo contains some scripts:
 npm install jison
 npm install --save-dev typescript
 npm install --save-dev @types/node
+npm install --save-dev typescript
 ```
-
 
 ## Jison grammar (`src/calculator.jison`)
 
@@ -75,9 +75,7 @@ This grammar recognizes numbers, `+`, and `-`, and evaluates the result directly
 
 /* Parser */
 %start expressions
-
 %token NUMBER
-
 %%
 
 expressions
@@ -108,7 +106,16 @@ This grammar:
 
 ## tsconfig.json
 
-Use a standard TypeScript config, but make sure to set `moduleResolution` to `node` so that it can find the generated parser.
+Use a standard TypeScript config, but make sure 
+- to set `moduleResolution` to `node` so that it can find the generated parser. 
+- We also set `allowJs` to `true` to allow importing the generated JS parser.
+- The `types` field includes `node` to get type definitions for Node.js, which is necessary for the generated parser.
+- `skipLibCheck` is set to `true` to avoid type checking issues with the generated parser's dependencies.
+- `module` is set to `commonjs` since Jison by default generates CommonJS modules.
+- The `esModuleInterop` flag is set to `true` to allow default imports from CommonJS modules, which can simplify importing the generated parser.
+- The `rootDir` is set to `src` and `outDir` to `dist` to keep source and compiled files organized.
+- The `target` is set to `ES2019` to ensure compatibility with the generated parser's JavaScript features.
+- The `include` field specifies that all TypeScript files in the `src` directory should be included in the compilation process.
 
 ```json
 {
