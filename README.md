@@ -97,7 +97,7 @@ Here are the contents of the dependencies fields in `package.json`:
     "typescript": "^5.9.3"
   }
 ]
-
+```
 
 
 ## Jison grammar (`src/calculator.jison`)
