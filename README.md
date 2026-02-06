@@ -265,12 +265,13 @@ Which should output:
 
 ## Branch `tests`
 
-[The `tests` branch of this repository](https://github.com/ULL-ESIT-PL/hello-jison-ts/tree/tests?tab=readme-ov-file) contains some tests for the calculator. You can run them with:
+[The `tests` branch of this repository](https://github.com/ULL-ESIT-PL/hello-jison-ts/tree/tests?tab=readme-ov-file) contains some [tests](https://github.com/ULL-ESIT-PL/hello-jison-ts/tree/tests/tests) for the calculator. You can run them with:
 
 ```bash
 npm test
 ``` 
-and see the output in the terminal. The tests use Jest and are located in `tests/*.test.ts`. 
+and see the output in the terminal. The tests use [Jest](https://jestjs.io/) and are located in 
+[`tests/*.test.ts`](https://github.com/ULL-ESIT-PL/hello-jison-ts/tree/tests/tests). 
 
 You can also generate a coverage report with:
 
