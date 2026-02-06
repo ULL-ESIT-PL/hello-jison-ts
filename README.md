@@ -12,7 +12,7 @@ npm install
 npm start
 ``` 
 
-Here is the output of running the above commands in a GH codespace terminal:
+Alternatively, after you install the dependencies, you can run the `start` script in the `package.json` which will run the parser generation, compile the TypeScript code, and execute the resulting JavaScript:
 
 ```bash
 @crguezl ➜ /workspaces/hello-jison-ts (main) $ npm i
