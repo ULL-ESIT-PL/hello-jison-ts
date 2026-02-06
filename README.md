@@ -10,7 +10,9 @@ instead you can clone this repo and run it directly:
 ```bash
 npm install
 npm start
+``` 
 
+```bash
 @crguezl ➜ /workspaces/hello-jison-ts (main) $ npm i
 
 added 1 package, and audited 26 packages in 2s
